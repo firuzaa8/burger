@@ -1,0 +1,7 @@
+body {
+    background-image: url("../images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-size: cover;
+}
+
