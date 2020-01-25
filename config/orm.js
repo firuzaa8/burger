@@ -42,7 +42,7 @@ var orm = {
 
     create: function (table, cols, vals, cb) {
 
-        var qstring = "insert into " + table;       
+        var qString = "insert into " + table;       
         
         qString += " (";
         qString += cols.toString();

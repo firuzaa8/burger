@@ -1,7 +1,33 @@
 body {
-    background-image: url("../images/burger.jpg");
+    background-image: url("../img/burger.jpg");
     background-repeat: no-repeat;
     background-size: 70%;
     background-size: cover;
 }
 
+h1, h2 {
+    color: white;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.6px;
+    word-spacing: 2.8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+#createburger {
+    text-align: center;
+   
+
+}
+#addburger {
+     width: 200px;
+    height: 100px;
+}
+.devouredForm {
+    margin-left: 60%;
+}

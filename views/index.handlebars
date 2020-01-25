@@ -1,0 +1,32 @@
+<h1>EAT DA BURGER!</h1>
+
+
+<form id="createburger" class="button-size">
+    <h2>Enter a burger you want to eat</h2>
+    <textarea type="text" name="burger" id="addburger"></textarea><br>
+    <button type="button" id="addbutton">Submit</button>
+    <h2>Click the "Submit" button</h2>
+</form>
+
+
+
+
+
+{{#each burgers}}
+{{#unless devoured}}
+<form class="button-size">
+    <textarea type="text" name="burger">{{this.id}}. {{this.burger_name}}</textarea>
+    <button type="submit" class="devourButton" id="{{this.id}}">Devour it!</button>
+</form>
+{{/unless}}
+{{/each}}
+
+
+{{#each burgers}}
+{{#if devoured}}
+<form class="button-size devouredForm">
+
+    <textarea type="text" name="burger" disabled="true">{{this.id}}. {{this.burger_name}}</textarea><br>
+    {{/if}}
+    {{/each}}
+</form>
